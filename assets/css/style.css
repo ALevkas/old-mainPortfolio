@@ -155,6 +155,7 @@ body {
     display: flex;
     min-height: 50px;
     align-items: center;
+    justify-content: center;
 }
 
 .menu__link {
@@ -165,12 +166,12 @@ body {
 }
 
 .menu__link._active {
-    color: #7a956b;
+    color: #ff9501;
 }
 
 @media (max-width: 767px) {
     .menu__link {
-        font-size: 12px;
+        font-size: 14px;
         margin: 0px 10px 0px 0px;
     }
 }
@@ -281,15 +282,25 @@ body {
 
 .coffee {
     flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .coffee__all {
-    width: 100%;
+    width: 70%;
     height: 100%;
     background: url("../img/coffee.png");
     background-position: center center;
     background-size: cover;
     overflow: hidden;
+    position: relative;
+}
+
+.coffee__text {
+    margin-top: 5px;
+    color: #fff;
 }
 
 .order__pagination {
